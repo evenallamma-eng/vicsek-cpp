@@ -1,5 +1,8 @@
 #include <iostream>
+#include "system.h"
 
 int main(){
-	return 0
+	System anInstance;
+	anInstance.updateRule();
+	return 0;
 }
