@@ -1,9 +1,12 @@
 #include "system.h"
 #include <iostream>
 
-System::System(int particleNumber, double sideLength, double timeStep, double noiseStrength){
+System::System(int particleNumber, double sideLength, double timeStep, double noiseStrength)
+{
 	this->particleNumber  = particleNumber;
 	this->noiseStrength = noiseStrength;
+	this->timeStep = timeStep;
+	this->sideLength = sideLength;
 	std::cout<< "I am constructing the System!" << std::endl;
 }
 
